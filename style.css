@@ -1,0 +1,233 @@
+@font-face {
+	font-family: BebasNeue Bold;
+	src: url('font/BebasNeue Bold.TTF');
+}
+@font-face {
+	font-family: BebasNeue Book;
+	src: url('font/BebasNeue Book.ttf');
+}
+@font-face {
+	font-family: Roboto Condensed;
+	src: url('font/RobotoCondensed-Regular.ttf');
+}
+body {
+	font-family: "Roboto Condensed"
+}
+.static {
+	position: fixed;
+	bottom: 8px;
+	right: 12px;
+}
+img.static_p {
+	width: 180px;
+}
+b1 {
+	font-family: "BebasNeue Bold";
+}
+b2 {
+	font-family: "BebasNeue Book";
+}
+a:link {
+	color: #515151;
+}
+a:visited {
+	color: #515151;
+}
+a:hover {
+	color: black;
+}
+a:active {
+	color: #707070;
+}
+body {
+	font-family: "Roboto Condensed";
+	margin: 0;
+	font-size: 120%;
+	max-width: 100%;
+	overflow-x: hidden;
+}
+div.blind {
+	padding-top: 50px;
+	height: 90px;
+}
+div.tabulka {
+	color: white;
+	width: 100%;
+	text-align: center;
+}
+div.tabulka_d {
+	color: white;
+	padding-top: 12px;
+	width: 100%;
+	text-align: center;
+}
+div.tabulka_s {
+	color: white;
+	width: 100%;
+	padding-top: 0px;
+	text-align: center;
+}
+/*sekce 2*/
+
+div.blind2 {
+	padding-top: 50px;
+	height: 0px;
+}
+div.sekce2 {
+	background-color: #343434;
+	color: white;
+}
+div.sekce3 {
+	background-color: white;
+	color: white;
+}
+td.table1 {
+	width: 390px;
+	vertical-align: top;
+	padding: 20px
+}
+img.hlava {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	height: 60%;
+}
+table.konec {
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	text-align: justify;
+	text-align-last: left;
+}
+td.patka {
+	text-align: left;
+}
+	
+	
+@media all and (max-width:1000px) {
+td.patka {
+	text-align: left;
+	
+}
+	div.text{
+		
+	}
+table.konec {
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	text-align: left;
+	text-align-last: left;
+}
+table.table1 {
+	width: 100%;
+}
+img.hlava {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+td.table1 {
+	display: block;
+	width: 100%;
+	background-color: #343434;
+	vertical-align: top;
+	padding: 20px;
+	padding-top: 80px;
+}
+tr.table1 {
+	display: block;
+	margin-bottom: 30px;
+	background-color: #343434;
+}
+}
+/*sekce 4*/
+div.blind4 {
+	padding-top: 50px;
+	height: 0px;
+}
+div.sekce4 {
+	background-color: #f3f3f3;
+	color: black;
+	font-size: 20px;
+}
+/*konec*/
+div.konec {
+	background-color: #535353;
+	color: white;
+	padding-top: 80px;
+	padding-bottom: 80px;
+	align-content: center;
+	background-size: 20%;
+}
+td.podnatpis {
+	width: 390px;
+}
+img.int {
+	width: 390px;
+}
+p.ssnadpis {
+	text-align: center;
+	font-size: 50px;
+	padding: 10px;
+}
+b1.ss {
+	font-size: 40px;
+	font-family: "BebasNeue Bold";
+}
+table.vnejsi {
+	margin-left: auto;
+	margin-right: auto;
+}
+table.stred {
+	text-align: center;
+	max-width: 1920px;
+	padding: 20px;
+}
+
+@media (max-width: 1000px) {
+table.stred {
+	max-width: 10000px;
+	font-size: 40px;
+	text-align: center;
+	width: 310%;
+	padding: 20px;
+}
+img.hlava {
+	height: 100%;
+}
+table.vnejsi {
+	margin-left: auto;
+	margin-right: auto;
+}
+b1.ss {
+	font-size: 80px;
+	font-family: "BebasNeue Bold";
+}
+table.vnejsi {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 80%;
+}
+p.ssnadpis {
+	text-align: center;
+	font-size: 500%;
+	padding: 50px;
+}
+img.static_p {
+	
+	width: 50%;
+}
+.static {
+	right: -460px;
+}
+img.int {
+	width: 60%;
+}
+td.podnatpis {
+	width: 600px;
+	text-align: justify;
+	text-align-last: left;
+	font-size: 170%;
+}
+}
