@@ -202,7 +202,7 @@ table.vnejsi {
 }
 b1.ss {
 	font-size: 80px;
-	font-family: "BebasNeue Bold";
+font-family: "BebasNeue Bold";
 }
 table.vnejsi {
 	margin-left: auto;
@@ -230,4 +230,16 @@ td.podnatpis {
 	text-align-last: left;
 	font-size: 170%;
 }
+}
+
+@media
+	only screen and (-webkit-min-device-pixel-ratio: 1.3),
+	only screen and (min-device-pixel-ratio: 1.3),
+	only screen and (min-resolution: 120dpi)
+	{
+		/* Your code to swap higher DPI images */
+
+        body { 
+            font-size: 150%;
+        }
 }
