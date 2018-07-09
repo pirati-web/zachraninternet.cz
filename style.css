@@ -73,6 +73,10 @@ div.blind2 {
 	padding-top: 50px;
 	height: 0px;
 }
+div.sekce22 {
+	background-color: black;
+	color: white;
+}
 div.sekce2 {
 	background-color: #343434;
 	color: white;
@@ -130,7 +134,7 @@ img.hlava {
 td.table1 {
 	display: block;
 	width: 100%;
-	background-color: #343434;
+	
 	vertical-align: top;
 	padding: 20px;
 	padding-top: 80px;
@@ -138,7 +142,7 @@ td.table1 {
 tr.table1 {
 	display: block;
 	margin-bottom: 30px;
-	background-color: #343434;
+	
 }
 }
 /*sekce 4*/
@@ -171,6 +175,10 @@ p.ssnadpis {
 	font-size: 50px;
 	padding: 10px;
 }
+p.ssnadpis22 {
+	text-align: center;
+	font-size: 50px;
+}
 b1.ss {
 	font-size: 40px;
 	font-family: "BebasNeue Bold";
@@ -202,7 +210,11 @@ table.vnejsi {
 }
 b1.ss {
 	font-size: 80px;
-font-family: "BebasNeue Bold";
+	font-family: "BebasNeue Bold";
+}
+b2.ss {
+	font-size: 80px;
+	font-family: 'BebasNeue Book';
 }
 table.vnejsi {
 	margin-left: auto;
@@ -230,16 +242,4 @@ td.podnatpis {
 	text-align-last: left;
 	font-size: 170%;
 }
-}
-
-@media
-	only screen and (-webkit-min-device-pixel-ratio: 1.3),
-	only screen and (min-device-pixel-ratio: 1.3),
-	only screen and (min-resolution: 120dpi)
-	{
-		/* Your code to swap higher DPI images */
-
-        body { 
-            font-size: 150%;
-        }
 }
