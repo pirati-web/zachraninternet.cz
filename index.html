@@ -156,6 +156,104 @@
 	
 <!--===============================================================================================-->
 	
+<style>
+
+
+
+.container-table100 {
+  width: 100%;
+  min-height: 100vh;
+ 
+
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+.wrap-table100 {
+  width: 700px;
+}
+
+table.new {
+  background: white;
+  width: 100%;
+}
+table.new * {
+  position: relative;
+}
+table td.new, table th.new {
+  padding-left: 8px;
+}
+table thead tr {
+  height: 60px;
+  background: black;
+}
+table tbody tr {
+  height: 50px;
+}
+table tbody tr.new:last-child {
+  border: 0;
+}
+table td.new, table th.new {
+  text-align: left;
+}
+table td.l, table th.l {
+  text-align: right;
+}
+table td.c, table th.c {
+  text-align: center;
+}
+table td.r, table th.r {
+  text-align: center;
+}
+
+
+.table100-head th{
+  font-size: 18px;
+  color: #fff;
+  line-height: 1.2;
+}
+
+tbody tr.new:nth-child(even) {
+  background-color: #f5f5f5;
+}
+
+tbody tr.new {
+  font-size: 12px;
+  color: #808080;
+}
+
+tbody tr.new:hover {
+  color: #555555;
+  background-color: #f5f5f5;
+  cursor: pointer;
+}
+
+.column1 {
+ 
+  width: 260px;
+	text-align: left;
+}
+
+.column2 {
+  width: 100px;
+	text-align: center;
+}
+
+.column3 {
+  width: 100px;
+	text-align: center;
+}
+
+
+
+
+
+</style>
+	
 	<div class="limiter">
 		<div class="container-table100">
 			<div class="wrap-table100">
@@ -163,137 +261,145 @@
 					<table class="new">
 						<thead class="new">
 							<tr class="table100-head">
-								<th class="column1"><b1 style="font-size: 40px;">Kdo</b1></th>
-								<th class="column2"><b1 style="font-size: 40px;">Jak hlasoval</b1></th>
-								<th class="column3"><b1 style="font-size: 40px;">Frakce</b1></th>
+								<th class="column1"><b1 style="font-size: 30px;"><c style="font-family: BebasNeue book; font-size 40%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kdo</b1></th>
+								<th class="column2"><b1 style="font-size: 30px;"><c style="font-family: BebasNeue book; font-size 40%;">Jak hlasoval</b1></th>
+								<th class="column3"><b1 style="font-size: 30px;"><c style="font-family: BebasNeue book; font-size 40%;">Frakce</b1></th>
 
 							</tr >
 						</thead>
 						<tbody>
-								<tr class="new">
-									<td class="column1">Jiří Pospíšil, TOP 09 a Starostové</td>
-									<td class="column2">zdržel se</td>
-									<td class="column3">EPP</td>
 
-								</tr>
 								<tr class="new">
-									<td class="column1">Jiří Maštálka, KSČM</td>
-									<td class="column2">nepřítomen</td>
-									<td class="column3">GUE-NGL</td>
-
-								</tr>
-								<tr class="new">
-									<td class="column1">Stanislav Polčák, Starostové a nezávislí</td>
+									<td class="column1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Stanislav Polčák, Starostové a nezávislí</td>
 									<td class="column2">pro</td>
 									<td class="column3">EPP</td>
 
 								</tr>
+								
 								<tr class="new">
-									<td class="column1">Jan Zahradil, ODS</td>
-									<td class="column2">nepřítomen</td>
-									<td class="column3">ECR</td>
-
-								</tr>
-								<tr class="new">
-									<td class="column1">Michaela Šojdrová, KDU-ČSL</td>
+									<td class="column1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Michaela Šojdrová, KDU-ČSL</td>
 									<td class="column2">pro</td>
 									<td class="column3">EPP</td>
+                                </tr>
+								
+								
+								
 
-								</tr>
 								<tr class="new">
-									<td class="column1">Pavel Poc, ČSSD</td>
-									<td class="column2">zdržel se</td>
-									<td class="column3">S&amp;D</td>
-
-								</tr>
-								<tr class="new">
-									<td class="column1">Jan Keller, ČSSD</td>
-									<td class="column2">nepřítomen</td>
-									<td class="column3">S&amp;D</td>
-
-								</tr>
-								<tr class="new">
-									<td class="column1">Luděk Niedermayer, TOP 09 a Starostové</td>
-									<td class="column2">zdržel se</td>
-									<td class="column3">EPP</td>
-
-								</tr>
-								<tr class="new">
-									<td class="column1">Miroslav Poche, ČSSD</td>
-									<td class="column2">nepřítomen</td>
-									<td class="column3">S&amp;D</td>
-
-								</tr>
-								<tr class="new">
-									<td class="column1">Jiří Payne, Strana svobodných občanů</td>
+									<td class="column1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jiří Payne, Strana svobodných občanů</td>
 									<td class="column2">proti</td>
 									<td class="column3">EFDD</td>
 
 								</tr>
 								<tr class="new">
-									<td class="column1">Petr Ježek, zvolen za ANO 2011, hnutí opustil</td>
+									<td class="column1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Petr Ježek, zvolen za ANO 2011, hnutí opustil</td>
 									<td class="column2">proti</td>
 									<td class="column3">ALDE/ADLE</td>
 
 								</tr>
+								
 								<tr class="new">
-									<td class="column1">Evžen Tošenovský, ODS</td>
+									<td class="column1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Olga Sehnalová, ČSSD</td>
+									<td class="column2">proti</td>
+									<td class="column3">S&amp;D</td>
+							    <tr class="new">
+									<td class="column1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kateřina Konečná, KSČM</td>
+									<td class="column2">proti</td>
+									<td class="column3">GUE-NGL</td>
+
+								</tr>
+
+							    <tr class="new">
+									<td class="column1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pavel Telička, zvolen za ANO 2011, hnutí opustil</td>
+									<td class="column2">proti</td>
+									<td class="column3">ALDE/ADLE</td>
+
+								</tr><br>
+
+<tr class="new">
+									<td class="column1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tomáš Zdechovský, KDU-ČSL</td>
+									<td class="column2">proti</td>
+									<td class="column3">EPP</td>
+
+								</tr>
+																<tr class="new">
+									<td class="column1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jiří Pospíšil, TOP 09 a Starostové</td>
+									<td class="column2">zdržel se</td>
+									<td class="column3">EPP</td>
+
+								</tr>
+								<tr class="new">
+									<td class="column1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Luděk Niedermayer, TOP 09 a Starostové</td>
+									<td class="column2">zdržel se</td>
+									<td class="column3">EPP</td>
+
+								
+								</tr>
+								<tr class="new">
+									<td class="column1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Evžen Tošenovský, ODS</td>
 									<td class="column2">zdržel se</td>
 									<td class="column3">ECR</td>
 
 								</tr>
+																</tr>
 								<tr class="new">
-									<td class="column1">Olga Sehnalová, ČSSD</td>
-									<td class="column2">proti</td>
+									<td class="column1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Martina Dlabajová, ANO 2011</td>
+									<td class="column2">zdržel se</td>
+									<td class="column3">ALDE/ADLE</td>
+
+								</tr>
+								<tr class="new">
+									<td class="column1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pavel Poc, ČSSD</td>
+									<td class="column2">zdržel se</td>
+									<td class="column3">S&amp;D</td>
+
+								</tr>
+															    <tr class="new">
+									<td class="column1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jaromír Štětina, TOP 09 a Starostové</td>
+									<td class="column2">zdržel se</td>
+									<td class="column3">EPP</td>
+
+								</tr>
+							    <tr class="new">
+									<td class="column1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pavel Svoboda, KDU-ČSL</td>
+									<td class="column2">zdržel se</td>
+									<td class="column3">EPP</td>
+
+								</tr>
+							    <tr class="new">
+									<td class="column1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dita Charanzová, ANO 2011</td>
+									<td class="column2">zdržel se</td>
+									<td class="column3">ALDE/ADLE</td>
+
+								</tr>
+								<tr class="new">
+									<td class="column1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jiří Maštálka, KSČM</td>
+									<td class="column2">nepřítomen</td>
+									<td class="column3">GUE-NGL</td>
+
+								</tr>
+																<tr class="new">
+									<td class="column1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Miroslav Poche, ČSSD</td>
+									<td class="column2">nepřítomen</td>
 									<td class="column3">S&amp;D</td>
 
 								</tr>
 								<tr class="new">
-									<td class="column1">Martina Dlabajová, ANO 2011</td>
-									<td class="column2">zdržel se</td>
-									<td class="column3">ALDE/ADLE</td>
-
-								</tr>
-							    <tr class="new">
-									<td class="column1">Kateřina Konečná, KSČM</td>
-									<td class="column2">proti</td>
-									<td class="column3">GUE-NGL</td>
-
-								</tr>
-							    <tr class="new">
-									<td class="column1">Jaromír Štětina, TOP 09 a Starostové</td>
-									<td class="column2">zdržel se</td>
-									<td class="column3">EPP</td>
-
-								</tr>
-							    <tr class="new">
-									<td class="column1">Pavel Svoboda, KDU-ČSL</td>
-									<td class="column2">zdržel se</td>
-									<td class="column3">EPP</td>
-
-								</tr>
-							    <tr class="new">
-									<td class="column1">Dita Charanzová, ANO 2011</td>
-									<td class="column2">zdržel se</td>
-									<td class="column3">ALDE/ADLE</td>
-
-								</tr>
-							    <tr class="new">
-									<td class="column1">Pavel Telička, zvolen za ANO 2011, hnutí opustil</td>
-									<td class="column2">proti</td>
-									<td class="column3">ALDE/ADLE</td>
-
-								</tr><br>
-<tr class="new">
-									<td class="column1">Jaromír Kohlíček, KSČM</td>
+									<td class="column1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jaromír Kohlíček, KSČM</td>
 									<td class="column2">nepřítomen</td>
 									<td class="column3">GUE-NGL</td>
 
 								</tr><br>
-<tr class="new">
-									<td class="column1">Tomáš Zdechovský, KDU-ČSL</td>
-									<td class="column2">proti</td>
-									<td class="column3">EPP</td>
+								<tr class="new">
+									<td class="column1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jan Zahradil, ODS</td>
+									<td class="column2">nepřítomen</td>
+									<td class="column3">ECR</td>
+
+								</tr>
+								<tr class="new">
+									<td class="column1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jan Keller, ČSSD</td>
+									<td class="column2">nepřítomen</td>
+									<td class="column3">S&amp;D</td>
 
 								</tr>
 								
@@ -303,12 +409,6 @@
 			</div>
 		</div>
 	</div>
-
-
-
-
-</body>
-</html>
 	
 	
 	
