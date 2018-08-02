@@ -122,7 +122,12 @@ td.patka {
 	
 }
 	div.text{
-		
+	table.konec2 {
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	text-align: center;
+}	
 	}
 table.konec {
 	margin-left: auto;
