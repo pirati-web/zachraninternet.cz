@@ -106,7 +106,12 @@ table.konec {
 td.patka {
 	text-align: left;
 }
-
+table.konec {
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	text-align: center;
+}
 
 
 
