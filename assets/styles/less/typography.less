@@ -1,0 +1,71 @@
+/*
+ *  Basic typography
+ */
+
+// Paragraphs and links
+// --------------------
+
+p {
+  margin: 0;
+}
+
+a,
+a:hover,
+a:active {
+  color: @bodyColor;
+
+  &:hover, &:active {
+    text-decoration: none;
+  }
+}
+a:hover,
+
+.highlited {
+  font-weight: 700;
+}
+
+// Headings
+// --------
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  text-rendering: optimizelegibility; // Fix the character spacing for headings
+}
+
+// Lists
+// -----
+
+ul, ol {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+  margin-bottom: 0;
+}
+
+// Misc
+// ----
+
+// Horizontal rules
+hr {
+  margin: 0;
+  border: 0;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #fff;
+}
+
+// Emphasis
+strong {
+  font-weight: 700;
+}
+em {
+  font-style: italic;
+}
+
+small {
+  font-size: 100%;
+}

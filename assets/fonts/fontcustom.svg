@@ -1,0 +1,39 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<!--
+2018-10-9: Created with FontForge (http://fontforge.org)
+-->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+<metadata>
+Created by FontForge 20181003 at Tue Oct  9 02:49:29 2018
+ By Jan Urbanec
+
+</metadata>
+<defs>
+<font id="fontcustom" horiz-adv-x="512" >
+  <font-face 
+    font-family="fontcustom"
+    font-weight="400"
+    font-stretch="normal"
+    units-per-em="512"
+    panose-1="2 0 5 3 0 0 0 0 0 0"
+    ascent="448"
+    descent="-64"
+    bbox="0 -64 1282.28 448"
+    underline-thickness="25.6"
+    underline-position="-51.2"
+    unicode-range="U+0020-F103"
+  />
+    <missing-glyph />
+    <glyph glyph-name="space" unicode=" " horiz-adv-x="200" 
+ />
+    <glyph glyph-name="right-arrow" unicode="&#xf103;" 
+d="M0 395.312l52.8906 52.6885l256.823 -255.983l-256.823 -256.017l-52.8906 52.7227l203.967 203.294z" />
+    <glyph glyph-name="left-arrow" unicode="&#xf102;" 
+d="M309.714 395.312l-203.967 -203.295l203.967 -203.294l-52.8574 -52.7227l-256.856 256.017l256.856 255.983z" />
+    <glyph glyph-name="chain" unicode="&#xf100;" 
+d="M670.422 210.005v14.0723h109.478v-179.634c-0.507812 -59.6934 -49.3682 -108.276 -109.063 -108.443h-561.772c-59.6943 0.166992 -108.556 48.75 -109.063 108.443v228.682c0.226562 59.9766 49.0869 108.791 109.063 108.961h334.953v-172.081h-344.68v-98.0957
+h571.085v98.0957zM611.337 173.788v-13.8652h-109.478v179.014c0.167969 59.8066 48.8438 108.668 108.65 109.063h562.289h0.103516c60.374 0 109.374 -49 109.374 -109.374v-0.103516v-227.647c-0.226562 -59.9775 -49.0869 -108.838 -109.063 -109.064h-335.056v171.978
+h344.265v98.3027h-571.085v-98.3027z" />
+  </font>
+</defs></svg>
