@@ -5,6 +5,19 @@
 
 // width < 960
 @media only screen and (max-width: 960px) {
+  .header__content {
+    .header-logo {
+      float: none;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .header-nav {
+      float: none;
+      text-align: center;
+    }
+  }
+
   .news__content {
     .news-slider__wrap {
       .news-slider {
@@ -73,18 +86,25 @@
 // width < 640
 @media only screen and (max-width: 640px) {
   .header__content {
-    .header-logo {
-      float: none;
+    .header-nav {
+      .size(0, auto);
+
       margin-left: auto;
       margin-right: auto;
-    }
 
-    .header-nav {
-      float: none;
-      text-align: center;
+      .header-nav__link {
+        .translateX(-50%);
+        display: inline-block;
+        white-space: nowrap;
+        margin: 0;
+      }
+
+      .header-nav__separator {
+        display: none;
+      }
     }
   }
-
+  
   .arguments__content {
     .arguments__content__main-title {
       #font .Bebas-Neue-Book(20, 400, 1);
@@ -145,26 +165,6 @@
 
 // width < 480
 @media only screen and (max-width: 480px) {
-  .header__content {
-    .header-nav {
-      .size(0, auto);
-
-      margin-left: auto;
-      margin-right: auto;
-
-      .header-nav__link {
-        .translateX(-50%);
-        display: inline-block;
-        white-space: nowrap;
-        margin: 0;
-      }
-
-      .header-nav__separator {
-        display: none;
-      }
-    }
-  }
-
   .title__content {
     .title-heading {
       .size(310px, auto);
@@ -287,20 +287,19 @@
     .internet-info__content__text {
       #font .Roboto(10, 400, 1);
     }
+  }
 
-    .internet-info__footer {
-      .internet-info__footer__web {
-        .internet-info__footer__web__link {
-          #font .Roboto(7, 400, 1);
-        }
+  .footer__content {
+    .footer__content__web {
+      .footer__content__web__link {
+        #font .Roboto(7, 400, 1);
       }
+    }
 
-      .internet-info__footer__email {
-        .internet-info__footer__email__link {
-          #font .Roboto(7, 400, 1);
-        }
+    .footer__content__email {
+      .footer__content__email__link {
+        #font .Roboto(7, 400, 1);
       }
     }
   }
-
 }

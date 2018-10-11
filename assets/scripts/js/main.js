@@ -428,24 +428,45 @@ $(window).on("load", function () {
 
 $(window).on("orientationchange resize", function () {
     var elSliderNews = $("#sliderNews");
-    if (elSliderNews.length && $(window).width() <= 480) {
-        sliderNews.reloadSlider(getSliderNewsSetting(248, 1, 1));
-        sliderTeam.reloadSlider(getSliderTeamSetting(310));
+    var elSliderTeam = $("#sliderTeam");
+    if ($(window).width() <= 480) {
+        if (elSliderNews.length) {
+            sliderNews.reloadSlider(getSliderNewsSetting(248, 1, 1));
+        }
+        if (elSliderTeam.length) {
+            sliderTeam.reloadSlider(getSliderTeamSetting(310));
+        }
     }
     else if (elSliderNews.length && $(window).width() <= 640) {
-        sliderNews.reloadSlider(getSliderNewsSetting(376, 1, 1));
-        sliderTeam.reloadSlider(getSliderTeamSetting(470));
+        if (elSliderNews.length) {
+            sliderNews.reloadSlider(getSliderNewsSetting(376, 1, 1));
+        }
+        if (elSliderTeam.length) {
+            sliderTeam.reloadSlider(getSliderTeamSetting(470));
+        }
     }
     else if (elSliderNews.length && $(window).width() <= 960) {
-        sliderNews.reloadSlider(getSliderNewsSetting(504, 1, 1));
-        sliderTeam.reloadSlider(getSliderTeamSetting(630));
+        if (elSliderNews.length) {
+            sliderNews.reloadSlider(getSliderNewsSetting(504, 1, 1));
+        }
+        if (elSliderTeam.length) {
+            sliderTeam.reloadSlider(getSliderTeamSetting(630));
+        }
     }
     else if (elSliderNews.length && $(window).width() <= 1050) {
-        sliderNews.reloadSlider(getSliderNewsSetting(380, 1, 2));
-        sliderTeam.reloadSlider(getSliderTeamSetting(950));
+        if (elSliderNews.length) {
+            sliderNews.reloadSlider(getSliderNewsSetting(380, 1, 2));
+        }
+        if (elSliderTeam.length) {
+            sliderTeam.reloadSlider(getSliderTeamSetting(950));
+        }
     }
     else if (elSliderNews.length) {
-        sliderNews.reloadSlider(getSliderNewsSetting(400, 1, 2));
-        sliderTeam.reloadSlider(getSliderTeamSetting(1000));
+        if (elSliderNews.length) {
+            sliderNews.reloadSlider(getSliderNewsSetting(400, 1, 2));
+        }
+        if (elSliderTeam.length) {
+            sliderTeam.reloadSlider(getSliderTeamSetting(1000));
+        }
     }
 });
