@@ -15,6 +15,14 @@
     .header-nav {
       float: none;
       text-align: center;
+
+      .header-nav__link {
+        #font .Roboto(9, 400, 1);
+      }
+
+      .header-nav__separator {
+        #font .Roboto(14, 400, 57px)
+      }
     }
   }
 
@@ -59,6 +67,13 @@
     }
   }
 
+  .voting-data__content {
+
+    .voting-table {
+      .size(80%, auto);
+    }
+  }
+
   .team__content {
     .team-pager {
       .team-pager__person {
@@ -93,6 +108,7 @@
       margin-right: auto;
 
       .header-nav__link {
+        #font .Roboto(10, 400, 1);
         .translateX(-50%);
         display: inline-block;
         white-space: nowrap;
@@ -141,6 +157,23 @@
           #font .Bebas-Neue-Bold(15, 400, 1);
 
           margin-bottom: 30px;
+        }
+      }
+    }
+  }
+
+  .voting-data__content {
+
+    .voting-table {
+      .size(90%, auto);
+
+      .voting-table__row {
+        .voting-table__head-cell {
+          #font .Roboto(9, 400, 1);
+        }
+
+        .voting-table__cell {
+          #font .Roboto(9, 400, 1);
         }
       }
     }
@@ -260,6 +293,13 @@
           }
         }
       }
+    }
+  }
+
+  .voting-data__content {
+
+    .voting-table {
+      .size(100%, auto);
     }
   }
 
