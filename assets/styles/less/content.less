@@ -642,6 +642,71 @@
   }
 }
 
+.going-to__content {
+  overflow: auto;
+  .going-to__content__title {
+    #font .Bebas-Neue-Book(48, 400, 1);
+
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 70px;
+
+    .going-to__content__title--bold {
+      #font .Bebas-Neue-Bold(48, 400, 1);
+    }
+  }
+
+  .going-to__content__text {
+    #font .Roboto(12, 400, 1);
+
+    margin-bottom: 30px;
+    text-align: center;
+
+    &:last-child {
+      margin-bottom: 70px;
+    }
+  }
+}
+
+.get-involved__content {
+  overflow: auto;
+  .get-involved__content__title {
+    #font .Bebas-Neue-Book(48, 400, 1);
+
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 70px;
+
+    .get-involved__content__title--bold {
+      #font .Bebas-Neue-Bold(48, 400, 1);
+    }
+  }
+
+  .get-involved__content__text {
+    #font .Roboto(12, 400, 1);
+    .size(80%, auto);
+    .center-block();
+
+    margin-bottom: 70px;
+    text-align: center;
+
+    .get-involved__content__text__link {
+      #font .Roboto(12, 400, 1);
+
+      text-decoration: none;
+      color: lighten(@trueBlack, 40%);
+
+      &:hover {
+        color: lighten(@trueBlack, 20%);
+      }
+
+      &:hover {
+        color: @trueBlack;
+      }
+    }
+  }
+}
+
 .team__content {
   overflow: auto;
 
