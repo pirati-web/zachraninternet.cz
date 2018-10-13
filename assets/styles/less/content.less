@@ -835,6 +835,86 @@
   }
 }
 
+.associates__content {
+  overflow: auto;
+
+  .associates-pager {
+    .size(90%, auto);
+    .center-block();
+    text-align: center;
+
+    .associates-pager__logo {
+      .size(30%, 300px);
+
+      display: inline-block;
+      vertical-align: top;
+      cursor: pointer;
+
+      &.active {
+        background: @creamWhite;
+      }
+
+      .associates-pager__logo__image__wrap {
+        .size(100%, 100%);
+
+        position: relative;
+
+        .associates-pager__logo__image {
+          .translate(-50%, -50%);
+
+          position: absolute;
+          top: 50%;
+          max-width: 90%;
+          max-height: 70%;
+          left: 50%;
+        }
+      }
+    }
+  }
+}
+
+.associates-info__content {
+  overflow: auto;
+
+  .associates-slider__wrap {
+    .size(100%, 250px);
+
+    .associates-slider {
+      .associates-slider__slide {
+        .size(100%, 250px);
+
+        position: relative;
+        text-align: center;
+
+        .associates-slider__slide__text {
+          #font .Roboto(12, 400, 1);
+          .size(80%, auto);
+          .translate(-50%, -50%);
+
+          position: absolute;
+          top: 50%;
+          left: 50%;
+
+          .associates-slider__slide__text__link {
+            #font .Roboto(12, 400, 1);
+
+            text-decoration: none;
+            color: lighten(@trueBlack, 40%);
+
+            &:hover {
+              color: lighten(@trueBlack, 20%);
+            }
+
+            &:hover {
+              color: @trueBlack;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 .footer__content {
   .size(100%, auto);
   .clear();
