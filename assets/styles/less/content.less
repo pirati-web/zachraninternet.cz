@@ -133,19 +133,46 @@
         margin-left: -6%;
 
         &:before {
-          content: "\f100";
+          content: "\f101";
         }
       }
     }
 
     .title-heading__subtitle {
-      #font .Bebas-Neue-Book(88, 400, 0.75);
+      #font .Bebas-Neue-Book(36, 400, 0.75);
 
       color: @trueBlack;
       margin-top: 15px;
 
       .title-heading__subtitle--bold {
         #font .Bebas-Neue-Bold(68, 400, 0.75);
+      }
+
+      .title-heading__subtitle--bigger {
+        #font .Bebas-Neue-Book(78, 400, 1.2);
+      }
+    }
+
+    .title-heading__link {
+      #font .Bebas-Neue-Bold(67, 400, 0.75);
+
+      text-decoration: none;
+      position: relative;
+
+      &:after {
+        .size(100%, 4px);
+
+        content: '';
+        position: absolute;
+        background-color: @trueBlack;
+        bottom: 0;
+        left: 0;
+      }
+
+      &:hover {
+        &:after {
+          display: none;
+        }
       }
     }
   }
@@ -968,6 +995,259 @@
       &:active {
         color: darken(@trueWhite, 60%);
       }
+    }
+  }
+}
+
+.freedom-white__content {
+  overflow: auto;
+
+  .freedom-white__content__title {
+    display: none;
+  }
+
+  .freedom-white__content__main-text {
+    #font .Roboto(@plainTextSize, 400, @plainTextHeight);
+
+    &.freedom-white__content__main-text--first {
+      margin-top: 70px;
+    }
+
+    &.freedom-white__content__main-text--second {
+      margin-top: 20px;
+    }
+  }
+
+  .freedom-white__content__second-title {
+    #font .Bebas-Neue-Bold(@headingFontSize*0.7, 400, 1);
+
+    margin-top: 70px;
+    margin-bottom: 70px;
+    text-align: center;
+  }
+
+  .freedom-white__content__boxs {
+    .clear();
+
+    margin-bottom: 70px;
+    text-align: center;
+
+    .freedom-white__content__box {
+      .size(30%, auto);
+
+      float: left;
+      margin-right: 5%;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      .freedom-white__content__box__icon {
+        #font .Fontcustom(60, 400, 1);
+      }
+
+      .freedom-white__content__box__title {
+        #font .Bebas-Neue-Bold(@headingFontSize*0.5, 400, 1);
+
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+
+      .freedom-white__content__box__text {
+        #font .Roboto(@plainTextSize, 400, @plainTextHeight);
+      }
+    }
+  }
+}
+
+.freedom-black__content {
+  overflow: auto;
+
+  .freedom-black__content__title {
+    #font .Bebas-Neue-Bold(@headingFontSize*0.7, 400, 1);
+
+    margin-top: 70px;
+    margin-bottom: 70px;
+    text-align: center;
+  }
+
+  .freedom-black__content__text {
+    #font .Roboto(@plainTextSize, 400, @plainTextHeight);
+
+    margin-bottom: 70px;
+  }
+
+  .freedom-black__content__tables {
+    .clear();
+    margin-bottom: 70px;
+
+    .freedom-black__content__table {
+      .size(49%, auto);
+
+      float: left;
+      text-align: center;
+      border: none;
+      border-collapse: collapse;
+
+      &:last-child {
+        float: right;
+      }
+
+      .freedom-black__content__table__item {
+        .freedom-black__content__table__item__cell {
+          #font .Roboto(@plainTextSize * 0.8, 400, @plainTextHeight);
+
+          padding: 5px;
+          text-align: left;
+
+          &:last-child {
+            text-align: right;
+          }
+        }
+
+        &:nth-child(2n+1) {
+          background: @darkGrey;
+        }
+      }
+    }
+  }
+
+  .freedom-black__content__guide {
+    .clear();
+
+    margin-bottom: 70px;
+    position: relative;
+
+    .freedom-black__content__guide__left {
+      .size(30%, auto);
+      .translateY(-50%);
+
+      position: absolute;
+      left: 0;
+      top: 50%;
+
+      .freedom-black__content__guide__left__title__wrap {
+        .size(200px,auto);
+
+        margin-left: auto;
+        margin-right: auto;
+
+        .freedom-black__content__guide__left__title {
+          #font .Bebas-Neue-Book(36, 400, 0);
+
+          text-align: center;
+
+          .freedom-black__content__guide__left__title--bold {
+            #font .Bebas-Neue-Bold(36, 400, 1);
+          }
+
+          .freedom-black__content__guide__left__title--bigger {
+            #font .Bebas-Neue-Book(39, 400, 1);
+          }
+
+          .freedom-black__content__guide__left__title--smaller-bold {
+            #font .Bebas-Neue-Bold(25, 400, 0.75);
+          }
+        }
+      }
+    }
+
+    .freedom-black__content__guide__right {
+      .size(70%, auto);
+
+      float: right;
+
+      .freedom-black__content__guide__right__text {
+        #font .Roboto(@plainTextSize, 400, @plainTextHeight);
+
+        margin-bottom: 20px;
+      }
+
+      .freedom-black__content__guide__right__list {
+        display: table;
+
+        .freedom-black__content__guide__right__list__item {
+          display: table-row;
+
+          .freedom-black__content__guide__right__list__item__num {
+            #font .Bebas-Neue-Bold(25, 400, 0.75);
+
+            display: table-cell;
+            vertical-align: middle;
+            padding-bottom: 20px;
+          }
+
+          .freedom-black__content__guide__right__list__item__text {
+            #font .Roboto(@plainTextSize, 400, @plainTextHeight);
+
+            display: table-cell;
+            padding-bottom: 20px;
+            padding-left: 20px;
+            vertical-align: middle;
+          }
+
+          &:last-child {
+            .freedom-black__content__guide__right__list__item__num {
+              padding-bottom: 0;
+            }
+
+            .freedom-black__content__guide__right__list__item__text {
+              padding-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .freedom-black__content__what-next-title {
+    #font .Bebas-Neue-Book(@headingFontSize*0.7, 400, 1);
+
+    text-align: center;
+    margin-bottom: 20px;
+
+    .freedom-black__content__what-next-title--bold {
+      #font .Bebas-Neue-Bold(@headingFontSize*0.7, 400, 1);
+    }
+  }
+
+  .freedom-black__content__what-next-text {
+    #font .Roboto(@plainTextSize, 400, @plainTextHeight);
+
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  .freedom-black__content__what-next-textarea {
+    .size(100%, auto);
+    #font .Roboto(@plainTextSize, 400, @plainTextHeight);
+
+    padding: 20px;
+    display: inline-block;
+    min-height: 640px;
+    max-width: 100%;
+    overflow: hidden;
+    overflow-y: auto;
+    resize: none;
+    border: 0;
+    outline: 0;
+  }
+
+  .freedom-black__content__what-next-button {
+    #font .Bebas-Neue-Bold(@plainTextSize, 400, 1);
+
+    color: @trueWhite;
+    border: solid 1px @trueWhite;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 70px;
+    display: inline-block;
+    float: right;
+    cursor: pointer;
+
+    &:hover {
+      color: @trueBlack;
+      background: @trueWhite;
     }
   }
 }

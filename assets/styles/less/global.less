@@ -11,3 +11,63 @@
     }
   }
 }
+
+.email-box {
+  .size(270px/2, 310px/2);
+
+  display: block;
+  position: fixed;
+  right: 0;
+  top: 170px;
+  padding-top: 20px/2;
+  background-color: black;
+  overflow: hidden;
+  color: @trueWhite;
+  text-decoration: none;
+
+  &:hover {
+    color: @trueWhite;
+    font-weight: 400;
+  }
+
+  .email-box__first-bold-text {
+    #font .Bebas-Neue-Bold(34/2, 400, 0.75);
+
+    white-space:nowrap;
+  }
+
+  .email-box__text {
+    #font .Bebas-Neue-Book(22/2, 400, 1.2);
+
+    white-space:nowrap;
+  }
+
+  .email-box__bigger-text {
+    #font .Bebas-Neue-Book(47/2, 400, 1);
+
+    white-space:nowrap;
+  }
+
+  .email-box__second-bold-text {
+    #font .Bebas-Neue-Bold(40/2, 400, 0.75);
+
+    white-space:nowrap;
+  }
+
+  &:after {
+    #font .Fontcustom(30, 400, 1);
+    .transform-origin(0 100%);
+    .rotate(-15deg);
+
+    content: '\f105';
+    text-rendering: optimizeLegibility;
+    text-transform: none;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    color: @trueWhite;
+    position: absolute;
+    right: 5px;
+    bottom: -20px;
+  }
+}

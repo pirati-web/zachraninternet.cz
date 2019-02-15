@@ -457,6 +457,11 @@ $(document).ready(function () {
         sliderAssociates.goToSlide(sliderNumber);
         sliderAssociates.startAuto();
     });
+
+    $("#copyButton").click(function () {
+        $("#emailText").select();
+        document.execCommand("copy");
+    });
 });
 
 $(window).on("load", function () {

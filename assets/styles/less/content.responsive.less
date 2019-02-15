@@ -12,6 +12,12 @@
       }
     }
   }
+
+  .freedom-black__content {
+    .freedom-black__content__what-next-textarea {
+      min-height: 715px;
+    }
+  }
 }
 
 // width < 960
@@ -241,6 +247,107 @@
           }
         }
       }
+    }
+  }
+
+  .freedom-white__content {
+    .freedom-white__content__main-text {
+      #font .Roboto(@plainTextSize, 400, @plainTextHeight);
+    }
+
+    .freedom-white__content__second-title {
+      #font .Bebas-Neue-Bold(@headingFontSize*0.7, 400, 1);
+    }
+
+    .freedom-white__content__boxs {
+      .freedom-white__content__box {
+        .size(100%, auto);
+
+        margin-right: 0;
+        margin-bottom: 70px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        .freedom-white__content__box__title {
+          #font .Bebas-Neue-Bold(@headingFontSize*0.5, 400, 1);
+        }
+
+        .freedom-white__content__box__text {
+          #font .Roboto(@plainTextSize, 400, @plainTextHeight);
+        }
+      }
+    }
+  }
+
+  .freedom-black__content {
+    .freedom-black__content__title {
+      #font .Bebas-Neue-Bold(@headingFontSize*0.7, 400, 1);
+    }
+
+    .freedom-black__content__text {
+      #font .Roboto(@plainTextSize, 400, @plainTextHeight);
+    }
+
+    .freedom-black__content__tables {
+      .freedom-black__content__table {
+        .size(100%, auto);
+
+        float: none;
+
+        .freedom-black__content__table__item {
+          .freedom-black__content__table__item__cell {
+            #font .Roboto(@plainTextSize * 0.8, 400, @plainTextHeight);
+          }
+        }
+      }
+    }
+
+    .freedom-black__content__guide {
+      .freedom-black__content__guide__left {
+        .size(100%, auto);
+
+        position: relative;
+        left: auto;
+        margin-top: 70px;
+      }
+
+      .freedom-black__content__guide__right {
+        .size(100%, auto);
+
+        float: none;
+        .freedom-black__content__guide__right__text {
+          #font .Roboto(@plainTextSize, 400, @plainTextHeight);
+        }
+
+        .freedom-black__content__guide__right__list {
+          .freedom-black__content__guide__right__list__item {
+            .freedom-black__content__guide__right__list__item__text {
+              #font .Roboto(@plainTextSize, 400, @plainTextHeight);
+            }
+          }
+        }
+      }
+    }
+
+    .freedom-black__content__what-next-title {
+      #font .Bebas-Neue-Book(@headingFontSize*0.7, 400, 1);
+
+      .freedom-black__content__what-next-title--bold {
+        #font .Bebas-Neue-Bold(@headingFontSize*0.7, 400, 1);
+      }
+    }
+
+    .freedom-black__content__what-next-text {
+      #font .Roboto(@plainTextSize, 400, @plainTextHeight);
+    }
+
+    .freedom-black__content__what-next-textarea {
+      .size(100%, auto);
+      #font .Roboto(@plainTextSize, 400, @plainTextHeight);
+
+      min-height: 740px;
     }
   }
 }
@@ -478,6 +585,80 @@
       }
     }
   }
+
+  .freedom-white__content {
+    .freedom-white__content__main-text {
+      #font .Roboto(@plainTextSize, 400, @plainTextHeight);
+    }
+
+    .freedom-white__content__second-title {
+      #font .Bebas-Neue-Bold(@headingFontSize*0.7, 400, 1);
+    }
+
+    .freedom-white__content__boxs {
+      .freedom-white__content__box {
+        .freedom-white__content__box__title {
+          #font .Bebas-Neue-Bold(@headingFontSize*0.5, 400, 1);
+        }
+
+        .freedom-white__content__box__text {
+          #font .Roboto(@plainTextSize, 400, @plainTextHeight);
+        }
+      }
+    }
+  }
+
+  .freedom-black__content {
+    .freedom-black__content__title {
+      #font .Bebas-Neue-Bold(@headingFontSize*0.7, 400, 1);
+    }
+
+    .freedom-black__content__text {
+      #font .Roboto(@plainTextSize, 400, @plainTextHeight);
+    }
+
+    .freedom-black__content__tables {
+      .freedom-black__content__table {
+        .freedom-black__content__table__item {
+          .freedom-black__content__table__item__cell {
+            #font .Roboto(@plainTextSize * 0.8, 400, @plainTextHeight);
+          }
+        }
+      }
+    }
+
+    .freedom-black__content__guide {
+      .freedom-black__content__guide__right {
+        .freedom-black__content__guide__right__text {
+          #font .Roboto(@plainTextSize, 400, @plainTextHeight);
+        }
+
+        .freedom-black__content__guide__right__list {
+          .freedom-black__content__guide__right__list__item {
+            .freedom-black__content__guide__right__list__item__text {
+              #font .Roboto(@plainTextSize, 400, @plainTextHeight);
+            }
+          }
+        }
+      }
+    }
+
+    .freedom-black__content__what-next-title {
+      #font .Bebas-Neue-Book(@headingFontSize*0.7, 400, 1);
+
+      .freedom-black__content__what-next-title--bold {
+        #font .Bebas-Neue-Bold(@headingFontSize*0.7, 400, 1);
+      }
+    }
+
+    .freedom-black__content__what-next-text {
+      #font .Roboto(@plainTextSize, 400, @plainTextHeight);
+    }
+
+    .freedom-black__content__what-next-textarea {
+      #font .Roboto(@plainTextSize, 400, @plainTextHeight);
+    }
+  }
 }
 
 // width < 480
@@ -510,11 +691,19 @@
       }
 
       .title-heading__subtitle {
-        #font .Bebas-Neue-Book(88 * 0.775, 400, 0.75);
+        #font .Bebas-Neue-Book(36 * 0.775, 400, 0.75);
 
         .title-heading__subtitle--bold {
           #font .Bebas-Neue-Bold(68 * 0.775, 400, 0.75);
         }
+
+        .title-heading__subtitle--bigger {
+          #font .Bebas-Neue-Book(78 * 0.775, 400, 1.2);
+        }
+      }
+
+      .title-heading__link {
+        #font .Bebas-Neue-Bold(67 * 0.775, 400, 0.75);
       }
     }
   }
@@ -763,4 +952,79 @@
     }
   }
 
+  .freedom-white__content {
+    .freedom-white__content__main-text {
+      #font .Roboto(@plainTextSize, 400, @plainTextHeight);
+    }
+
+    .freedom-white__content__second-title {
+      #font .Bebas-Neue-Bold(@headingFontSize*0.7, 400, 1);
+    }
+
+    .freedom-white__content__boxs {
+      .freedom-white__content__box {
+        .freedom-white__content__box__title {
+          #font .Bebas-Neue-Bold(@headingFontSize, 400, 1);
+        }
+
+        .freedom-white__content__box__text {
+          #font .Roboto(@plainTextSize, 400, @plainTextHeight);
+        }
+      }
+    }
+  }
+
+  .freedom-black__content {
+    .freedom-black__content__title {
+      #font .Bebas-Neue-Bold(@headingFontSize*0.7, 400, 1);
+    }
+
+    .freedom-black__content__text {
+      #font .Roboto(@plainTextSize, 400, @plainTextHeight);
+    }
+
+    .freedom-black__content__tables {
+      .freedom-black__content__table {
+        .freedom-black__content__table__item {
+          .freedom-black__content__table__item__cell {
+            #font .Roboto(@plainTextSize * 0.8, 400, @plainTextHeight);
+          }
+        }
+      }
+    }
+
+    .freedom-black__content__guide {
+      .freedom-black__content__guide__right {
+        .freedom-black__content__guide__right__text {
+          #font .Roboto(@plainTextSize, 400, @plainTextHeight);
+        }
+
+        .freedom-black__content__guide__right__list {
+          .freedom-black__content__guide__right__list__item {
+            .freedom-black__content__guide__right__list__item__text {
+              #font .Roboto(@plainTextSize, 400, @plainTextHeight);
+            }
+          }
+        }
+      }
+    }
+
+    .freedom-black__content__what-next-title {
+      #font .Bebas-Neue-Book(@headingFontSize*0.7, 400, 1);
+
+      .freedom-black__content__what-next-title--bold {
+        #font .Bebas-Neue-Bold(@headingFontSize*0.7, 400, 1);
+      }
+    }
+
+    .freedom-black__content__what-next-text {
+      #font .Roboto(@plainTextSize, 400, @plainTextHeight);
+    }
+
+    .freedom-black__content__what-next-textarea {
+      #font .Roboto(@plainTextSize, 400, @plainTextHeight);
+
+      min-height: 715px;
+    }
+  }
 }
