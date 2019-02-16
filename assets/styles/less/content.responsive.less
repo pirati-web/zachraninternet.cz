@@ -292,13 +292,12 @@
 
     .freedom-black__content__tables {
       .freedom-black__content__table {
-        .size(100%, auto);
-
-        float: none;
-
         .freedom-black__content__table__item {
           .freedom-black__content__table__item__cell {
             #font .Roboto(@plainTextSize * 0.8, 400, @plainTextHeight);
+          }
+          .freedom-black__content__table__item__head-cell {
+            #font .Bebas-Neue-Bold(@plainTextSize, 400, @plainTextHeight);
           }
         }
       }
@@ -621,7 +620,11 @@
       .freedom-black__content__table {
         .freedom-black__content__table__item {
           .freedom-black__content__table__item__cell {
-            #font .Roboto(@plainTextSize * 0.8, 400, @plainTextHeight);
+            #font .Roboto(@plainTextSize * 0.6, 400, @plainTextHeight);
+          }
+
+          .freedom-black__content__table__item__head-cell {
+            #font .Bebas-Neue-Bold(@plainTextSize, 400, @plainTextHeight);
           }
         }
       }
@@ -987,7 +990,13 @@
       .freedom-black__content__table {
         .freedom-black__content__table__item {
           .freedom-black__content__table__item__cell {
-            #font .Roboto(@plainTextSize * 0.8, 400, @plainTextHeight);
+            #font .Roboto(7, 400, @plainTextHeight);
+
+            font-size: 7px;
+          }
+
+          .freedom-black__content__table__item__head-cell {
+            #font .Bebas-Neue-Bold(7, 400, @plainTextHeight);
           }
         }
       }

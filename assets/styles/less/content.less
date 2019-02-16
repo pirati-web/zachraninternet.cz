@@ -1078,35 +1078,53 @@
   }
 
   .freedom-black__content__tables {
-    .clear();
     margin-bottom: 70px;
 
     .freedom-black__content__table {
-      .size(49%, auto);
+      .size(100%, auto);
 
-      float: left;
       text-align: center;
       border: none;
       border-collapse: collapse;
-
-      &:last-child {
-        float: right;
-      }
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 40px;
 
       .freedom-black__content__table__item {
-        .freedom-black__content__table__item__cell {
-          #font .Roboto(@plainTextSize * 0.8, 400, @plainTextHeight);
+        &:nth-child(2n+1) {
+          background: @darkGrey;
+        }
+
+        .freedom-black__content__table__item__head-cell {
+          #font .Bebas-Neue-Bold(@plainTextSize, 400, @plainTextHeight);
 
           padding: 5px;
-          text-align: left;
+          color: white;
+          background: darken(@darkGrey, 10%);
+          text-align: center;
+
+          &:first-child {
+            text-align: left;
+          }
 
           &:last-child {
             text-align: right;
           }
         }
 
-        &:nth-child(2n+1) {
-          background: @darkGrey;
+        .freedom-black__content__table__item__cell {
+          #font .Roboto(@plainTextSize * 0.8, 400, @plainTextHeight);
+
+          padding: 5px;
+          text-align: center;
+
+          &:first-child {
+            text-align: left;
+          }
+
+          &:last-child {
+            text-align: right;
+          }
         }
       }
     }
