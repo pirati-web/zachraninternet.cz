@@ -377,6 +377,46 @@ function getSliderAssociatesSetting(width) {
     };
 }
 
+function renderMap() {
+    /* global L */
+    var layer = new L.StamenTileLayer("toner");
+    /* jshint unused:false */
+    var map = L.map("FreedomMap").setView([49.8250074, 15.4749003], 7);
+
+    var mapIcon = L.icon({
+        iconUrl: "assets/images/app/map/map-icon.png",
+
+        iconSize:     [30, 50],
+        iconAnchor:   [15, 49],
+    });
+
+    //Praha
+    L.marker([50.073247, 14.414518], {icon: mapIcon}).addTo(map);
+    //Brno
+    L.marker([49.195098, 16.608022], {icon: mapIcon}).addTo(map);
+    //Ceske Budejovice
+    L.marker([48.974796, 14.474014], {icon: mapIcon}).addTo(map);
+    //Jihlava
+    L.marker([49.396230, 15.590170], {icon: mapIcon}).addTo(map);
+    //Liberec
+    L.marker([50.770179, 15.058607], {icon: mapIcon}).addTo(map);
+    //Olomouc
+    L.marker([49.592531, 17.252344], {icon: mapIcon}).addTo(map);
+    //Ostrava
+    L.marker([49.836028, 18.292755], {icon: mapIcon}).addTo(map);
+    //Pardubice
+    L.marker([50.037839, 15.777308], {icon: mapIcon}).addTo(map);
+    //Plzen
+    L.marker([49.747238, 13.377496], {icon: mapIcon}).addTo(map);
+    //Usti nad Labem
+    L.marker([50.660247, 14.040576], {icon: mapIcon}).addTo(map);
+    //Hradec Kralove
+    L.marker([50.209197, 15.832629], {icon: mapIcon}).addTo(map);
+
+
+    map.addLayer(layer);
+}
+
 $(document).ready(function () {
     for (var i in votingData) {
         preloadImages("./assets/images/app/parties/" + votingData[i].image.src);
@@ -462,6 +502,12 @@ $(document).ready(function () {
         $("#emailText").select();
         document.execCommand("copy");
     });
+
+    if ($("#FreedomMap").length) {
+        $("#FreedomMap").ready(function () {
+            renderMap();
+        });
+    }
 });
 
 $(window).on("load", function () {

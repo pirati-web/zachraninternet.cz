@@ -58,8 +58,11 @@
     <script src="./assets/scripts/js/lib/chartjs-plugin-labels-1.0.1.min.js"></script>
     <script src="./assets/scripts/js/lib/chartjs-plugin-datalabels-0.4.0.min.js"></script>
     <script src="./assets/scripts/js/lib/jquery.bxslider-4.2.12.min.js"></script>
+    <link rel="stylesheet" href="./assets/styles/css/lib/leaflet-1.4.0.css" />
+    <script src="./assets/scripts/js/lib/leaflet-1.4.0.min.js"></script>
+    <script type="text/javascript" src="http://maps.stamen.com/js/tile.stamen.js?v1.3.0"></script>
     <!-- Own Assets -->
-    <link rel="stylesheet" type="text/css" href="./assets/styles/css/main.min.css?0-0-9">
+    <link rel="stylesheet" type="text/css" href="./assets/styles/css/main.min.css?0-0-10">
     <script src="./assets/scripts/js/main.min.js"></script>
     <title>Chceš být na straně svobody? | Zachraňte internet!</title>
 </head>
@@ -115,32 +118,13 @@
             <p class="freedom-white__content__main-text freedom-white__content__main-text--second">
                 Europarlamentu, ve kterém sedí 21 českých zástupců, z nichž velká část usiluje o znovuzvolení. Dejte jim tak nyní vědět, co si o směrnici myslíte!
             </p>
-            <h2 class="freedom-white__content__second-title">Proč proti směrnici bojujeme?</h2>
-            <div class="freedom-white__content__boxs">
-                <div class="freedom-white__content__box">
-                    <span class="freedom-white__content__box__icon">&#xf103;</span>
-                    <h3 class="freedom-white__content__box__title">Ublíží uživatelům</h3>
-                    <p class="freedom-white__content__box__text">
-                        Dostanete se k méně obsahu, budete mít problém nahrát i zcela legální věci a bude mnohem těžší se dovolat svých práv. Všechny vaše materiály posoudí nekontrolovatelní roboti.
-                    </p>
-                </div>
-                <div class="freedom-white__content__box">
-                    <span class="freedom-white__content__box__icon">&#xf102;</span>
-                    <h3 class="freedom-white__content__box__title">Ublíží inovacím</h3>
-                    <p class="freedom-white__content__box__text">
-                        Pokud budou poskytovatelé odpovědní za to, co k nim kdo nahraje, budou nuceni nasadit filtry. A takové filtry jsou nejen velmi chybové, ale také velmi drahé. I s výjimkou pro ty nejmenší podniky by to znamenalo ohromnou bariéru, která by jen potvrdila pozici amerických obrů.
-                    </p>
-                </div>
-                <div class="freedom-white__content__box">
-                    <span class="freedom-white__content__box__icon">&#xf100;</span>
-                    <h3 class="freedom-white__content__box__title">Ublíží tvůrcům</h3>
-                    <p class="freedom-white__content__box__text">
-                        Pokud se platformy stanou plně odpovědnými za to, co je nahráváno, budou ještě motivovanější mazat a blokovat obsah, aby se vyhnuly problémům. Na trhu také zůstanou jen ty největší platformy jako je YouTube a Facebook a tvůrci se budou muset přizpůsobit jejich pravidlům, bez možnosti využít alternativu.
-                    </p>
-                </div>
-            </div>
+            <h2 class="freedom-white__content__second-title">Jdeme do ulic!</h2>
+            <p class="freedom-white__content__main-text freedom-white__content__main-text--third">
+                V ulicích jsme už loni byli a zabralo to. V Německu protesty proti směrnici nabírají tisícihlavých rozměrů. Přidejme se! Tentokrát ve velkém. <strong>23. března ve 14:00</strong> se celá Evropa zvedne a vejde do ulic, aby dala najevo, že nejsme spamboti ani smyšlený odpor, ale skuteční lidé, kterým směrnice vadí. Mrkněte se níže na mapu, kde nejblíže vám budeme protestovat a přidejte se! Pro podrobnosti sledujte tento web a hlavní <a class="freedom-white__content__main-text__link" href="https://www.facebook.com/events/259571161641706/" target="_blank">Facebook událost</a>.
+            </p>
         </div>
     </div>
+    <div class="freedom-map" id="FreedomMap"></div>
     <div class="freedom-black">
         <div class="freedom-black__content">
             <h2 class="freedom-black__content__title">Komu můžu dát vědět?</h2>
@@ -349,6 +333,34 @@ Na základě všech těchto důvodů vás žádám, abyste nepodpořil/-a člán
 
 S pozdravem</textarea>
             <a class="freedom-black__content__what-next-button" id="copyButton">Kopírovat kliknutím</a>
+        </div>
+    </div>
+    <div class="freedom-grey">
+        <div class="freedom-grey__content">
+            <h2 class="freedom-grey__content__second-title">Proč proti směrnici bojujeme?</h2>
+            <div class="freedom-grey__content__boxs">
+                <div class="freedom-grey__content__box">
+                    <span class="freedom-grey__content__box__icon">&#xf103;</span>
+                    <h3 class="freedom-grey__content__box__title">Ublíží uživatelům</h3>
+                    <p class="freedom-grey__content__box__text">
+                        Dostanete se k méně obsahu, budete mít problém nahrát i zcela legální věci a bude mnohem těžší se dovolat svých práv. Všechny vaše materiály posoudí nekontrolovatelní roboti.
+                    </p>
+                </div>
+                <div class="freedom-grey__content__box">
+                    <span class="freedom-grey__content__box__icon">&#xf102;</span>
+                    <h3 class="freedom-grey__content__box__title">Ublíží inovacím</h3>
+                    <p class="freedom-grey__content__box__text">
+                        Pokud budou poskytovatelé odpovědní za to, co k nim kdo nahraje, budou nuceni nasadit filtry. A takové filtry jsou nejen velmi chybové, ale také velmi drahé. I s výjimkou pro ty nejmenší podniky by to znamenalo ohromnou bariéru, která by jen potvrdila pozici amerických obrů.
+                    </p>
+                </div>
+                <div class="freedom-grey__content__box">
+                    <span class="freedom-grey__content__box__icon">&#xf100;</span>
+                    <h3 class="freedom-grey__content__box__title">Ublíží tvůrcům</h3>
+                    <p class="freedom-grey__content__box__text">
+                        Pokud se platformy stanou plně odpovědnými za to, co je nahráváno, budou ještě motivovanější mazat a blokovat obsah, aby se vyhnuly problémům. Na trhu také zůstanou jen ty největší platformy jako je YouTube a Facebook a tvůrci se budou muset přizpůsobit jejich pravidlům, bez možnosti využít alternativu.
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
     <div class="footer">

@@ -1016,6 +1016,20 @@
     &.freedom-white__content__main-text--second {
       margin-top: 20px;
     }
+
+    &.freedom-white__content__main-text--third {
+      margin-bottom: 70px;
+    }
+
+    .freedom-white__content__main-text__link {
+      text-decoration: none;
+      color: @grey;
+      font-weight: 400;
+
+      &:hover {
+        color: @darkGrey;
+      }
+    }
   }
 
   .freedom-white__content__second-title {
@@ -1024,39 +1038,6 @@
     margin-top: 70px;
     margin-bottom: 70px;
     text-align: center;
-  }
-
-  .freedom-white__content__boxs {
-    .clear();
-
-    margin-bottom: 70px;
-    text-align: center;
-
-    .freedom-white__content__box {
-      .size(30%, auto);
-
-      float: left;
-      margin-right: 5%;
-
-      &:last-child {
-        margin-right: 0;
-      }
-
-      .freedom-white__content__box__icon {
-        #font .Fontcustom(60, 400, 1);
-      }
-
-      .freedom-white__content__box__title {
-        #font .Bebas-Neue-Bold(@headingFontSize*0.5, 400, 1);
-
-        margin-top: 20px;
-        margin-bottom: 20px;
-      }
-
-      .freedom-white__content__box__text {
-        #font .Roboto(@plainTextSize, 400, @plainTextHeight);
-      }
-    }
   }
 }
 
@@ -1266,6 +1247,51 @@
     &:hover {
       color: @trueBlack;
       background: @trueWhite;
+    }
+  }
+}
+
+.freedom-grey__content {
+  overflow: auto;
+
+  .freedom-grey__content__second-title {
+    #font .Bebas-Neue-Bold(@headingFontSize*0.7, 400, 1);
+
+    margin-top: 70px;
+    margin-bottom: 70px;
+    text-align: center;
+  }
+
+  .freedom-grey__content__boxs {
+    .clear();
+
+    margin-bottom: 70px;
+    text-align: center;
+
+    .freedom-grey__content__box {
+      .size(30%, auto);
+
+      float: left;
+      margin-right: 5%;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      .freedom-grey__content__box__icon {
+        #font .Fontcustom(60, 400, 1);
+      }
+
+      .freedom-grey__content__box__title {
+        #font .Bebas-Neue-Bold(@headingFontSize*0.5, 400, 1);
+
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+
+      .freedom-grey__content__box__text {
+        #font .Roboto(@plainTextSize, 400, @plainTextHeight);
+      }
     }
   }
 }
