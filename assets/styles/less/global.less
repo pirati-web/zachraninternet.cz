@@ -71,3 +71,31 @@
     bottom: -20px;
   }
 }
+
+.go-out {
+  .size(auto, auto);
+  .transform-origin(100% 100%);
+  .rotate(-90deg);
+
+  display: block;
+  position: fixed;
+  right: 0;
+  top: 170px;
+  padding: 10px;
+  background-color: black;
+  overflow: hidden;
+  color: @trueWhite;
+  text-decoration: none;
+  text-align: center;
+
+  &:hover {
+    color: @trueWhite;
+    font-weight: 400;
+  }
+
+  .go-out__text {
+    #font .Bebas-Neue-Bold(21, 400, 0.8);
+
+    white-space:nowrap;
+  }
+}
