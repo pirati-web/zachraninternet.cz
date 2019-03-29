@@ -139,7 +139,7 @@
     }
 
     .title-heading__subtitle {
-      #font .Bebas-Neue-Book(36, 400, 0.75);
+      #font .Bebas-Neue-Book(45, 400, 0.75);
 
       color: @trueBlack;
       margin-top: 15px;
@@ -150,6 +150,10 @@
 
       .title-heading__subtitle--bigger {
         #font .Bebas-Neue-Book(78, 400, 1.2);
+      }
+
+      .title-heading__subtitle--smaller-bold {
+        #font .Bebas-Neue-Bold(32.5, 400, 1.2);
       }
     }
 
@@ -189,6 +193,14 @@
     text-align: center;
     margin-top: 40px;
     margin-bottom: 40px;
+
+    .main-text__content__text__link {
+      font-weight: 400;
+
+      &:hover {
+        color: @darkGrey;
+      }
+    }
   }
 }
 

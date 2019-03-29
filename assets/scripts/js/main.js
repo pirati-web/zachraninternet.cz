@@ -6,7 +6,7 @@ var votingData = {
             width: 26,
             height: 23
         },
-        data: [14, 7, 43]
+        data: [36, 3, 25]
     },
     acr: {
         name: "ACR",
@@ -15,7 +15,7 @@ var votingData = {
             width: 22,
             height: 22
         },
-        data: [31, 6, 31]
+        data: [23, 2, 42]
     },
     efdd: {
         name: "EFDD",
@@ -24,7 +24,7 @@ var votingData = {
             width: 23,
             height: 22
         },
-        data: [2, 4, 34]
+        data: [6, 1, 28]
     },
     enf: {
         name: "ENF",
@@ -33,7 +33,7 @@ var votingData = {
             width: 28,
             height: 12
         },
-        data: [16, 0, 16]
+        data: [15, 3, 14]
     },
     epp: {
         name: "EPP",
@@ -42,7 +42,7 @@ var votingData = {
             width: 44,
             height: 21
         },
-        data: [16, 3, 11]
+        data: [153, 13, 28]
     },
     greens: {
         name: "Greens/EFA",
@@ -51,7 +51,7 @@ var votingData = {
             width: 41,
             height: 24
         },
-        data: [10, 0, 40]
+        data: [4, 4, 39]
     },
     gue: {
         name: "GUE/NGL",
@@ -60,7 +60,7 @@ var votingData = {
             width: 32,
             height: 23
         },
-        data: [3, 8, 36]
+        data: [5, 3, 36]
     },
     sad: {
         name: "S&D",
@@ -69,7 +69,7 @@ var votingData = {
             width: 25,
             height: 25
         },
-        data: [93, 3, 78]
+        data: [99, 6, 54]
     }
 };
 
